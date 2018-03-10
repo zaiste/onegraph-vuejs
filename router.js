@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import HelloWorld from '@/HelloWorld'
 import About from '@/About'
+import Tweets from '@/Tweets'
 
 Vue.use(Router)
 
@@ -18,6 +19,11 @@ export default new Router({
       path: '/about',
       name: 'About',
       component: About
+    },
+    {
+      path: '/tweets',
+      name: 'Tweets',
+      component: Tweets
     }
   ]
 })

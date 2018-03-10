@@ -1,12 +1,10 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-
-    <ul>
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/about">About</router-link></li>
-    </ul>
-
+    <div class="field control">
+      <router-link to="/" class="button is-small is-outlined">Home</router-link>
+      <router-link to="/about" class="button is-small is-outlined">About</router-link>
+      <router-link to="/tweets" class="button is-small is-outlined">Tweets</router-link>
+    </div>
     <router-view/>
   </div>
 </template>
@@ -17,26 +15,6 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+<style scoped>
 
 </style>
